@@ -1,0 +1,238 @@
+.agency-sidebar {
+  background: linear-gradient(135deg, #00804d 100%);
+}
+.student-sidebar {
+  background: linear-gradient(135deg, #039be5 100%);
+}
+/* Sidebar Styles for Dashboards */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar {
+  background: linear-gradient;
+  color: #fff;
+  min-width: 220px;
+  max-width: 220px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 2rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 2px 0 12px rgba(44, 62, 80, 0.08);
+  z-index: 10;
+}
+.teacher-sidebar {
+  background: linear-gradient(135deg, #125fed 0%, #125fed 0%);
+}
+.sidebar-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.sidebar-menu li {
+  margin-bottom: 1.2rem;
+}
+.sidebar-menu a {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.sidebar-menu a:hover {
+  background: rgba(255,255,255,0.18);
+  color: #1a4fa0;
+}
+.sidebar-icon {
+  font-size: 1.2rem;
+  color: #fff;
+  transition: color 0.2s;
+}
+.sidebar-menu a:hover .sidebar-icon {
+  color: #e67e22;
+}
+.logout-btn {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.08rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px rgba(231,76,60,0.08);
+  transition: background 0.2s;
+}
+.logout-btn:hover {
+  background: #c0392b;
+}
+.main-content {
+  flex: 1;
+  padding: 2.5rem 2rem;
+  background: #f3f6fa;
+  min-height: 100vh;
+  margin-left: 220px;
+}
+/* Main UI Styles for LoginPage and RegisterPage */
+.styled-bg {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+.login-container, .register-container {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto; /* Added to ensure centering */
+}
+.login-title {
+  color: #2d6cdf;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  background: #f3f6fa;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+.input-group .icon {
+  margin-right: 10px;
+  color: #2d6cdf;
+  font-size: 1.2rem;
+}
+.login-form input,
+.login-form select,
+.login-form textarea {
+  border: 2px solid #2d6cdf;
+  background: #f3f6fa;
+  outline: none;
+  font-size: 1rem;
+  flex: 1;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.login-form input:focus,
+.login-form select:focus,
+.login-form textarea:focus {
+  border-color: #1a4fa0;
+  box-shadow: 0 0 0 2px #e0eafc;
+}
+.login-btn {
+  background: #2d6cdf;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.login-btn:hover {
+  background: #1a4fa0;
+}
+.register-link {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.register-title {
+  color: #e67e22;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.register-btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.register-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.7rem 1rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.register-btn.student {
+  background: #2d6cdf;
+  color: #fff;
+}
+.register-btn.student:hover {
+  background: #1a4fa0;
+}
+.register-btn.teacher {
+  background: #e67e22;
+  color: #fff;
+}
+.register-btn.teacher:hover {
+  background: #b95c0b;
+}
+.register-btn.agency {
+  background: #16a085;
+  color: #fff;
+}
+.register-btn.agency:hover {
+  background: #117864;
+}
+.login-link {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.back-btn {
+  background: #bdc3c7;
+  color: #2c3e50;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+  transition: background 0.2s;
+}
+.back-btn:hover {
+  background: #7f8c8d;
+}
