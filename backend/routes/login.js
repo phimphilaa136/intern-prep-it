@@ -9,7 +9,7 @@ router.post('/login', async (req, res) => {
     return res.status(400).json({ error: "กรุณากรอกข้อมูลให้ครบถ้วน" });
   }
 
-  // แปลงรหัสผ่านที่รับมาเป็น MD5 hash
+  // แปลงรหัสผ่านที่รับมาเป็น MD5 hash //
   const passwordMD5 = crypto.createHash('md5').update(password).digest('hex');
 
   let user, role;

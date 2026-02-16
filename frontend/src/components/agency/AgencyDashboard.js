@@ -75,7 +75,7 @@ function AgencyDashboard() {
               <h3 style={{fontWeight:700,fontSize:'1.3rem',marginBottom:'1.2rem',color:'#1b8752'}}>ประกาศกิจกรรมและกำหนดการนักศึกษาฝึกงาน</h3>
               <table style={{width:'100%',borderCollapse:'collapse',background:'#f9f9f9',borderRadius:'8px'}}>
                 <thead>
-                  <tr style={{background:'#eaf6fb'}}>
+                  <tr style={{background:'#ffffff'}}>
                     <th style={{padding:'0.7rem',fontWeight:600}}>กิจกรรม</th>
                     <th style={{padding:'0.7rem',fontWeight:600}}>วัน / เดือน / ปี</th>
                     <th style={{padding:'0.7rem',fontWeight:600}}>หมายเหตุ</th>
